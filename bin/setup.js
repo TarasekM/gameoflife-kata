@@ -2,12 +2,14 @@
 
 const path = require("path");
 const util = require("util");
+const fs = require("fs");
+const rimraf = require("rimraf");
 
 const rootPath = process.cwd();
 const kataDirName = process.argv.slice(2).length > 0 ? process.argv.slice(2)[0] : "gameoflife-kata";
-const kataPath = path.join(rootDir, dirName);
+const kataPath = path.join(rootPath, kataDirName);
 
-const repositoryUrl = "https://gitlab.com/lazarow/cds-kata-test";
+const repositoryUrl = "https://gitlab.com/CodingDojoSilesia/gameoflife-kata";
 
 const exec = util.promisify(require("child_process").exec);
 async function runShellCmd(command)
@@ -28,12 +30,12 @@ async function setup()
     try {
 
         console.log(`Cloning Kata files from the repository ${repositoryUrl}`);
-        await runShellCmd(`git clone --depth 1 --filter=combine:blob:none+tree:0 --no-checkout ${repositoryUrl} ${kataPath}`);
+        await runShellCmd(`git clone --depth 1 --no-checkout ${repositoryUrl} ${kataPath}`);
         process.chdir(kataPath);
         await runShellCmd(`git checkout master -- kata-boilerplate/`);
-        fs.rmdirSync(path.join(kataPath, ".git"));
+        rimraf.sync(path.join(kataPath, ".git"));
   
-        console.log(`Installing dependencies, please wait...`);
+        /*console.log(`Installing dependencies, please wait...`);
         await runShellCmd(`npm i`);
         console.log(`All dependencies are installed successfully!`);
   
@@ -51,7 +53,7 @@ async function setup()
         console.log();
         console.log(`npm test`);
         console.log(`// ^-- the MOST important command, you should use it very often`);
-        console.log();
+        console.log();*/
   
     } catch (error) {
         console.log(error);

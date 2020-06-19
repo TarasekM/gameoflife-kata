@@ -1,6 +1,6 @@
 {
   "name": "@coding-dojo-silesia/create-gameoflife-kata",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Game of Life Kata Creator for Coding Dojo Silesia",
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
     "url": "https://gitlab.com/CodingDojoSilesia/gameoflife-kata/issues"
   },
   "homepage": "https://gitlab.com/CodingDojoSilesia/gameoflife-kata#readme",
-  "bin": "bin/setup.js"
+  "bin": "bin/setup.js",
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
 }
