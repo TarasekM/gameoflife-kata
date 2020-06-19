@@ -54,10 +54,8 @@ The output should look like this:
 
 We prepared some files to boost up the initial phase of
 this Kata. This includes:
-- _src/getSucceedingGeneration.js_
-// ^-- put your extraordinary solution here
-- _test/getSucceedingGeneration.test.js_
-// ^-- put your even more extraordinary Unit tests here
+- _src/getSucceedingGeneration.js_ // put your extraordinary solution here
+- _test/getSucceedingGeneration.test.js_ // put your even more extraordinary Unit tests here
 
 We propose a testing library which is Jest (included as an npm
 dependency), you can run it easily by command: npm test.
