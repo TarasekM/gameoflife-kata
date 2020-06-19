@@ -36,8 +36,9 @@ async function setup()
         await runShellCmd(`git checkout master -- kata-boilerplate/`);
         rimraf.sync(path.join(kataPath, ".git"));
         copydir.sync(path.join(kataPath, "kata-boilerplate"), kataPath);
+        rimraf.sync(path.join(kataPath, "kata-boilerplate"));
   
-        /*console.log(`Installing dependencies, please wait...`);
+        console.log(`Installing dependencies, please wait...`);
         await runShellCmd(`npm i`);
         console.log(`All dependencies are installed successfully!`);
   
@@ -55,7 +56,7 @@ async function setup()
         console.log();
         console.log(`npm test`);
         console.log(`// ^-- the MOST important command, you should use it very often`);
-        console.log();*/
+        console.log();
   
     } catch (error) {
         console.log(error);
