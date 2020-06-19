@@ -17,8 +17,8 @@ async function runShellCmd(command)
 {
     try {
         const { stdout, stderr } = await exec(command);
-        console.log(stdout);
-        console.log(stderr);
+        //console.log(stdout);
+        //console.log(stderr);
     } catch {
         (err) => {
             console.error(err);
@@ -41,7 +41,7 @@ async function setup()
         console.log(`Installing dependencies, please wait...`);
         await runShellCmd(`npm i`);
         console.log(`All dependencies are installed successfully!`);
-  
+        console.log();
         console.log(`First of all, go to the kata folder:`);
         console.log();
         console.log(`cd ${kataDirName}`);
