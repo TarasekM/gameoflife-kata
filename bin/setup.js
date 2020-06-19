@@ -4,6 +4,7 @@ const path = require("path");
 const util = require("util");
 const fs = require("fs");
 const rimraf = require("rimraf");
+const copydir = require("copy-dir");
 
 const rootPath = process.cwd();
 const kataDirName = process.argv.slice(2).length > 0 ? process.argv.slice(2)[0] : "gameoflife-kata";
@@ -34,6 +35,7 @@ async function setup()
         process.chdir(kataPath);
         await runShellCmd(`git checkout master -- kata-boilerplate/`);
         rimraf.sync(path.join(kataPath, ".git"));
+        copydir.sync(path.join(kataPath, "kata-boilerplate"), kataPath);
   
         /*console.log(`Installing dependencies, please wait...`);
         await runShellCmd(`npm i`);

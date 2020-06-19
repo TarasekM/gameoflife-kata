@@ -19,6 +19,7 @@
   "homepage": "https://gitlab.com/CodingDojoSilesia/gameoflife-kata#readme",
   "bin": "bin/setup.js",
   "dependencies": {
+    "copy-dir": "^1.3.0",
     "rimraf": "^3.0.2"
   }
 }
