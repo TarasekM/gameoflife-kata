@@ -1,6 +1,6 @@
 {
   "name": "@coding-dojo-silesia/create-gameoflife-kata",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Game of Life Kata Creator for Coding Dojo Silesia",
   "repository": {
     "type": "git",
