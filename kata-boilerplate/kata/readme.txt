@@ -58,7 +58,7 @@ We prepared some files to boost up the initial phase of
 this Kata. This includes:
 - src/getSucceedingGeneration.js
 // ^-- put your extraordinary solution here
-- test/getSucceedingGeneration.test
+- test/getSucceedingGeneration.test.js
 // ^-- put your even more extraordinary Unit tests here
 
 We propose a testing library which is Jest (included as an npm

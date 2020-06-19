@@ -34,25 +34,29 @@ showing the next generation (as returned string output).
 ## Input & output
 
 The input string looks like this:
+```
 4 8
 ........
 ....*...
 ...**...
 ........
+```
 
 The output should look like this:
+```
 ........
 ...**...
 ...**...
 ........
+```
 
 ## Boilerplate
 
 We prepared some files to boost up the initial phase of
 this Kata. This includes:
-- src/getSucceedingGeneration.js
+- _src/getSucceedingGeneration.js_
 // ^-- put your extraordinary solution here
-- test/getSucceedingGeneration.test
+- _test/getSucceedingGeneration.test.js_
 // ^-- put your even more extraordinary Unit tests here
 
 We propose a testing library which is Jest (included as an npm
