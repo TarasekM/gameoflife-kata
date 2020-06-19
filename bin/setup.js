@@ -66,11 +66,8 @@ async function setup()
         console.log();
         console.log(`(2) Secondly, there are several commands you can use:`);
         console.log();
-        console.log(`npm run kata`);
+        console.log(`npm run readme`);
         console.log(`// ^-- show the kata description`);
-        console.log();
-        console.log(`npm run tribute`);
-        console.log(`// ^-- show the kata tribute`);
         console.log();
         console.log(`npm test`);
         console.log(`// ^-- the MOST important command, you should use it very often`);
