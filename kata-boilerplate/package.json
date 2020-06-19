@@ -1,6 +1,8 @@
 {
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "kata": "node kata/reader.js readme",
+        "tribute": "node kata/reader.js tribute"
     },
     "devDependencies": {
         "jest": "^26.0.1"
