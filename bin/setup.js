@@ -10,7 +10,7 @@ const rootPath = process.cwd();
 const kataDirName = process.argv.slice(2).length > 0 ? process.argv.slice(2)[0] : "gameoflife-kata";
 const kataPath = path.join(rootPath, kataDirName);
 
-const repositoryUrl = "https://gitlab.com/CodingDojoSilesia/gameoflife-kata";
+const repositoryUrl = "https://github.com/CodingDojoSilesia/gameoflife-kata";
 
 const exec = util.promisify(require("child_process").exec);
 async function runShellCmd(command)
